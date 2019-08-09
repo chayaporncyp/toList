@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YtN-4f-j0d">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="t8W-du-UFK">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="YtN-4f-j0d" customClass="DetailViewController" customModule="Lab1toList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VP3-rw-h6V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH4-ad-oa4">
+                                <rect key="frame" x="16" y="60" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZQ-QK-74Y">
+                                <rect key="frame" x="131" y="97" width="152" height="30"/>
+                                <state key="normal" title="back to previous page"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="YtN-4f-j0d" eventType="touchUpInside" id="sVE-9k-BJU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CoY-N6-oz8" firstAttribute="trailing" secondItem="SH4-ad-oa4" secondAttribute="trailing" constant="16" id="3Rs-b2-2qd"/>
+                            <constraint firstItem="PZQ-QK-74Y" firstAttribute="top" secondItem="SH4-ad-oa4" secondAttribute="bottom" constant="16" id="6Po-Ob-6ay"/>
+                            <constraint firstItem="SH4-ad-oa4" firstAttribute="leading" secondItem="CoY-N6-oz8" secondAttribute="leading" constant="16" id="W36-bT-6gd"/>
+                            <constraint firstItem="PZQ-QK-74Y" firstAttribute="centerX" secondItem="VP3-rw-h6V" secondAttribute="centerX" id="X9f-OW-NGm"/>
+                            <constraint firstItem="SH4-ad-oa4" firstAttribute="top" secondItem="CoY-N6-oz8" secondAttribute="top" constant="16" id="q5E-Z2-ITv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CoY-N6-oz8"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="SH4-ad-oa4" id="95x-ns-Nck"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilO-UE-Vms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="-8"/>
+        </scene>
+    </scenes>
+</document>
